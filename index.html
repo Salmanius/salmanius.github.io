@@ -7,22 +7,25 @@ Class: CSU CS372 FALL 2017
 -->
 
 <html>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="js/main.js"></script>
 <head>
-	<title>JTC372</title>
+	<title id="title">JTC372</title>
 </head>
 
 <body>
-	<h1>This will be my hosting location for my JTC372 project.</h1>
+	<h1 id="title">This will be my hosting location for my JTC372 project.</h1>
 	<ol>
-		<li><a href="http://www.google.com">Google!</li>
-		<li><a href="http://www.reddit.com">reddit</li>
+		<li><a href="http://www.google.com">Google!</a></li>
+		<li><a href="http://www.reddit.com">reddit</a></li>
 	</ol>
-	<ul>
+	<div class="center">
+		<button type="button" onclick="changeTitle()">Change Title</button>
 		<a href="https://www.flickr.com/photos/christophercochran">
-			<img src="src/photos/1.jpg" alt="Costa Rica" title="Costa Rica" style="width:510px;height:340px;">
-			<img src="src/photos/2.jpg" alt="Ecuador" title="Ecuador" style="width:510px;height:340px;">
+			<img src="resources/photos/1.jpg" alt="Costa Rica" title="Costa Rica">
+			<img src="resources/photos/2.jpg" alt="Ecuador" title="Ecuador">
 		</a>
-	</ul>
+	</div>
 	<p><a href="#top">Top</p>
 </body>
 </html>

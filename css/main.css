@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+button {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.center {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+}
