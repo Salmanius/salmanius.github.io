@@ -4,21 +4,33 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 <!-- 
 Name: Chris Cochran
 Class: CSU CS372 FALL 2017
+Flickr API Key: 8e6439e9d46a9929d427b0483328be10
+Flickr API secret: e789212452c61207
 -->
 
 <html>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/test.js"></script>
 <head>
-	<title id="title">JTC372</title>
+	<title>JTC372</title>
 </head>
 
 <body>
-	<h1 id="title">This will be my hosting location for my JTC372 project.</h1>
+	<h1 id="header">This will be my hosting location for my JTC372 project.</h1>
 	<ol>
 		<li><a href="http://www.google.com">Google!</a></li>
 		<li><a href="http://www.reddit.com">reddit</a></li>
 	</ol>
+	<div class="center">
+		<button type="button" class="middle" onclick="fetchPhoto()">Fetch a Photo!</button>
+	</div>
+	<div class="center">
+		<a class="middle">ID: </a> <a id="photoID" class="middle"></a>
+		<a class="middle">Photo URL: </a> <a id="photoURL" class="middle"></a>
+		<img id="photo" src="" alt="" title="">
+	</div>
 	<div class="center">
 		<button type="button" onclick="changeTitle()">Change Title</button>
 		<a href="https://www.flickr.com/photos/christophercochran">

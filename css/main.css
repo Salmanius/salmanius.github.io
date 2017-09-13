@@ -18,6 +18,11 @@ button {
 	padding-bottom: 25px;
 }
 
+.middle {
+	margin:0 auto;
+	display: block;
+}
+
 .center {
     margin: auto;
     width: 75%;

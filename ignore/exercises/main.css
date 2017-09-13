@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+#header {
+	width: 740px;
+	padding: 10px;
+}
+
+body {
+	font-family: "Comic Sans", Georgia, "Times New Roman", Serif;
+}
+
+#nav {
+	width: 740px;
+	background: #54728A;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font: 14px;
+}
+
+#nav a {
+	font-weight: bold;
+	color: white;
+}
+
+#footer {
+	width: 740px;
+	background: #54728A;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#content {
+	width: 740px;
+	padding-left: 10px;
+}
+
+#content img {
+	float: right;
+}
