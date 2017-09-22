@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+#border {
+	width: 750px;
+	border: 1px solid black;
+}
+
+#header {
+	padding: 10px;
+	background: #CD3333;
+}
+
+#header img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#border body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#nav ul{
+	list-style: none;
+	background: #00C;
+	overflow: auto;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#nav li{
+	width: 150px;
+	float: left;
+	text-align: center;
+}
+
+#nav a {
+	color: white;
+	font: bold 14px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+
+#footer {
+	background: #00C;
+	color: white;
+	font: bold 14px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#content {
+	margin-bottom: 0px;
+	width: 740px;
+	padding-left: 10px;
+	font-size: 13px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	overflow: auto;
+}
+
+
+#main {
+	float: left;
+	width: 540px;
+}
+
+#sidebar {
+	float: left;
+	background-color: #FFC;
+	width: 200px;
+	text-align: center;
+	line-height: 1;
+}
+
+#sidebar img {
+	border: 1px solid black;
+}
+
+#info {
+	line-height: .1;
+	font-size: 11px;
+}
