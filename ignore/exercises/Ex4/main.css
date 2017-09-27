@@ -1,0 +1,108 @@
+body {
+	background-image: url("page_bg.png");
+	background-repeat: repeat-x;
+}
+
+#container {
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	padding: 10px;
+	border: 2px solid lightgrey;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+#header {
+	overflow: auto;
+	padding-bottom: 6px;
+}
+
+#logo {
+	float: left;
+}
+
+#navbar {
+	float: right;
+	margin-top: auto;
+	margin-bottom: auto;
+	line-height: 100px;
+}
+
+#navbar ul {
+	margin: 0px;
+	list-style: none;
+	text-align: right;
+}
+
+#navbar li {
+	float: left;
+	color: #7c6958;
+}
+
+#navbar a {
+	text-decoration: none;
+	color: #7c6958;
+	font-size: 1em;
+	font-weight: bold;
+	padding-left: 3px;
+}
+
+#collage img {
+	padding: 10px;
+	padding-right: 14px;
+	padding-left: 14px; 
+	border: 1px blue solid;
+}
+
+#content {
+	margin-top: 6px;
+	overflow: auto;
+}
+
+#services {
+	float: left;
+	width: 30%;
+	background-color: #D7EAF5;
+}
+
+#services h3 {
+	padding-top: 0px;
+	margin-top: 10px;
+	font-size: 1.05em;
+	padding-left: 10px;
+}
+
+#services ul {
+	font-size: .95em;
+	list-style: none;
+	text-decoration: none;
+}
+
+#services li {
+	margin-bottom: 10px;
+}
+
+#modeling {
+	margin-top: 0px;
+	padding-top: 0px; 
+	font-size: 1em;
+	float: left;
+	width: 70%;
+	background-color: white;
+	line-height: 1.4em;
+}
+
+#modeling h3{
+	padding-top: 0px;
+	margin-top: 10px;
+	font-size: 1.1em;
+	padding-left: 10px;
+}
+
+#modeling p{
+	padding-left: 10px;
+}
+
+
+
