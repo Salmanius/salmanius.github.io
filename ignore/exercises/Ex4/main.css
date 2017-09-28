@@ -93,6 +93,8 @@ body {
 	width: 70%;
 	background-color: white;
 	line-height: 1.4em;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
 }
 
 #modeling h3{
