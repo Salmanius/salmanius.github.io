@@ -57,13 +57,15 @@ body {
 
 #content {
 	margin-top: 6px;
-	overflow: auto;
+	overflow: hidden;
 }
 
 #services {
 	float: left;
 	width: 30%;
 	background-color: #D7EAF5;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
 }
 
 #services h3 {
