@@ -1,0 +1,99 @@
+body {
+	background-color: #69C;
+	margin-top: 10px;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+#header {
+	font-family: 'Droid Sans', sans-serif;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#headerBar {
+	background-color: #006;
+	color: white;
+	font: 16px; 
+	text-align: center;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+#headerImages {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+#headerImages img {
+	width: 481px;
+}
+
+#navBar {
+	background-color: #006;
+	width: 100%;
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#navBar ul{
+	list-style: none;
+	margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#navBar li{
+  	float: left;
+}
+
+#navBar .small {
+	width: 14%;
+}
+
+#navBar .big {
+	width: 22%;
+}
+
+#navBar a {
+	text-decoration: none;
+	text-align:center;
+	display: block;
+	color: white;
+}
+
+#navBar a:hover {
+	color: #F49D05;
+}
+
+
+#content {
+	background: green;
+}
+
+
+#footerBar {
+	background-color: #006;
+	text-decoration: none;
+	color: white; 
+	text-align: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#footerBar a:link {
+	color: white;
+}
+
+#footerBar a:visited {
+	color: white;
+}
