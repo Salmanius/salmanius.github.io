@@ -1,0 +1,37 @@
+body {
+	background-color: #98520c;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#wrapper {
+	max-width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+	overflow: auto;
+}
+
+#top {
+	background-color: black;
+}
+
+#mugShot {
+	margin-top: 10px;
+	float: right;
+}
+
+#nameLogo {
+	background-color: white;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 10px;
+	padding-top: 3px;
+	padding-bottom: 2px;
+	float: left;
+}
+
+#flagLogo {
+	padding-top: 3px;
+	float: right;
+}
