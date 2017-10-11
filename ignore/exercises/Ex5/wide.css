@@ -7,12 +7,14 @@ body {
 	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto; 
+	background-color: white;
 }
 
 #header {
 	font-family: 'Droid Sans', sans-serif;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	overflow: auto;
 }
 
 #headerBar {
@@ -41,6 +43,7 @@ body {
 	background-color: #006;
 	width: 100%;
 	float: left;
+	overflow: auto;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
@@ -49,7 +52,6 @@ body {
 	list-style: none;
 	margin: 0;
     padding: 0;
-    overflow: auto;
 }
 
 #navBar li{
@@ -75,11 +77,95 @@ body {
 	color: #F49D05;
 }
 
-
 #content {
-	background: green;
+	background-color: green;
+	overflow: hidden;
+	font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
 }
 
+#left,
+#right {
+	float: left;
+	width: 28.5%;
+	background-color: #ffc;
+	padding-top: 10px;
+	padding-bottom: 32767px;
+  	margin-bottom: -32767px;
+  	text-align: center;
+  	font-size: .78em;
+}
+
+
+#left img,
+#right img {
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-bottom: 6px;
+}
+
+#middle {
+	background-color: white;
+	float: left;
+	width: 43%;
+	padding-bottom: 32767px;
+  	margin-bottom: -32767px;
+  	text-align: center;
+  	padding-top: 10px;
+}
+
+#middle strong {
+	font: black bold;
+	size: 1.5em;
+}
+
+#middle h1 {
+	margin: 0 1.25em;
+  	font-size: 1.25em;
+  	text-align: center;
+}
+
+#bandList {
+	list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+
+#bandList li {
+	list-style: none;
+	text-align: center;
+	line-height: 1.7em;
+  	margin: 0 10px;
+  	font-size: 1.15em;
+  	margin-bottom: 0.6em;
+  	font-weight: bold;
+  	list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+#middle h4 {
+	color:#F49D05;
+	font-size: 0.85em;
+  	text-align: center;
+  	font-style: italic;
+  	margin: 0.8em 0;
+}
+
+#middle p {
+	text-align: left;
+	font-size: .85em;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.5em;
+}
+
+#footer{
+	margin-top: 0px;
+	padding-top: 0px;
+}
 
 #footerBar {
 	background-color: #006;
