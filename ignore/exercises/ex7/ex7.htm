@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>Exercise 7 - Responsive Design Example</title>
+
+<link href="wide.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+		  $( "#cross" ).hide();
+	$( "#menu" ).hide();
+	$( "#hamburger" ).click(function() {
+	$( "#menu" ).slideToggle( "slow", function() {
+	$( "#hamburger" ).hide();
+	$( "#cross" ).show();
+	});
+	});
+	
+	$( "#cross" ).click(function() {
+	$( "#menu" ).slideToggle( "slow", function() {
+	$( "#cross" ).hide();
+	$( "#hamburger" ).show();
+	});
+	});
+			});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+<div id="header"><a href="#"><img src="images/generic_header.gif" width="740" height="49" alt="Generic Header Graphic"></a></div>
+	<div id="nav">
+    
+
+    <button id="hamburger">&#x2261;</button>
+    <button id="cross">x</button>
+    
+    
+		<ul>
+			<li><a href="#">Home</a></li>
+      		<li><a href="#">Irma Bar &amp; Grill</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Map</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+    
+    <div id="menu">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Artists</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Venues</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+    </div> 
+    
+    
+	<div id="content">
+		<div id="main">
+			<img src="images/irmagrill.jpg" width="480" height="285" alt="Irma Bar and Grill">
+	    <h3>First Header</h3>
+			<p>Ad iriure esse, camur, usitas diam autem mauris
+				exerci hendrerit consequat, ventosus macto. At,
+				amet, eu, epulae, fere, paulatim nutus uxor quae
+				luctus. Os nulla tation dolor bis os feugiat.
+				Amet camur augue bis quae incassum dolus. Vel gravis duis
+				jugis luptatum abluo gilvus tamen, laoreet. Quae
+				mos facilisi luptatum erat nostrud sino. </p>
+			<p>Tation neque facilisis letalis duis distineo amet ex luctus et minim,
+				diam. Virtus eligo valetudo nibh accumsan demoveo, gemino antehabeo volutpat,
+				indoles. Commodo eu damnum ea gemino jugis aliquam modo amet iriure in
+				te luptatum mara luptatum. Gravis fere incassum, secundum pala, si, ad
+</p>
+			<h3>Second header</h3>
+			<p>Saluto te nisl iusto quadrum lenis, vel ullamcorper decet ex, duis capio. </p>
+			<p>Probo, ut conventio antehabeo modo nisl eros ut fatua aptent magna abico
+				persto. Sino laoreet jugis autem, secundum, comis, in blandit sino wisi,
+				ibidem nonummy. Capio, autem macto dignissim ut praesent consequat, jugis
+				minim verto, proprius. Meus probo, acsi sed genitus iustum odio iusto
+				ad loquor, ut ut jumentum.<br>
+			</p>
+		</div>
+		<div id="sidebar">
+			<h3>First sidebar header</h3>
+			<ul>
+				<li><a href="fds">Link 1</a></li>
+				<li><a href="dfas">Link 2</a></li>
+				<li><a href="fdas">Link 3</a></li>
+				<li><a href="dfsa">Link 4</a></li>
+				<li><a href="dfas">Link 5</a></li>
+			</ul>
+			<h3>Second sidebar header</h3>
+			<ul>
+				<li><a href="fddf">Link 1</a></li>
+				<li><a href="dafs">Link 2</a></li>
+				<li><a href="fdsa">Link 3</a></li>
+				<li><a href="dfsa">Link 4</a></li>
+				<li><a href="fdas">Link 5</a></li>
+			</ul>
+		</div>
+	</div>
+<div id="footer">Copyright 2014</div>
+</div>
+
+</body>
+</html>
