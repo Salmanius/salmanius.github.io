@@ -14,7 +14,12 @@ img {
 	margin-left: auto;
 }
 #header {
+
 }
+#test {
+	display: none;
+}
+
 #header img {
 	border-top-style: none;
 	border-right-style: none;
