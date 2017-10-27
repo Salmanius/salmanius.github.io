@@ -1,16 +1,74 @@
 body {
     background-color: black;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+#top{
+    overflow: auto;
+    margin-left: 2em;
+}
+
+#top h1 {
+    color: #D9D9D9;
+    font-weight: 400;
+    overflow: auto;
+    display: block;
+    float: left;
+    margin: 0;
+    min-width: 210px;
+    width: 30%;
+    line-height: 1.7em;
+}
+
+#top a {
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+#top a:hover {
+    color: #2DA18A;
+}
+
+#navbar {
+    width: 40%;
+    min-width: 470px;
+    display: block;
+    float: left;
+}
+
+#navbar ul {
+    margin: 0;
+    overflow: auto;
+}
+
+#navbar li {
+    margin 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    float: left;
+    line-height: 3.7em;
+}
+#navbar a {
+    text-decoration: none;
+    color: #D9D9D9;
+    margin-right: 1em;
+    text-align: center;
+}
+
+#navbar a:hover {
+    color: #2DA18A;
+}
+
+#imgWrapper {
+    float: left;
+    height: 50em;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    padding-bottom: 50px;
+   max-height: 75%;
+   width: auto;
+   margin: .5em 1em 1em 2em;
 }
 
 button {
@@ -18,13 +76,6 @@ button {
 	padding-bottom: 25px;
 }
 
-.middle {
-	margin:0 auto;
-	display: block;
-}
-
-.center {
-    margin: auto;
-    width: 75%;
-    padding: 10px;
+h1 {
+    color: #D9D9D9;
 }
