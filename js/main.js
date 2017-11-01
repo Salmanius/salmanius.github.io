@@ -30,6 +30,18 @@ function fetchPhoto() {
     
 }
 
+
+function setHeight(){
+    var height = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight;
+    //alert(height);
+    document.getElementById("imgWrapper").style.height = (height*0.8)+"px";
+    var width = document.getElementById('myImage').offsetWidth;
+    alert(width);
+    document.getElementById("top").style.width = width+"px";
+}
+
 //flickr.photos.getSizes
 
 //https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=8e6439e9d46a9929d427b0483328be10&photo_id=37005632866&per_page=1&format=json&nojsoncallback=1

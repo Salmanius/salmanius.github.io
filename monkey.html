@@ -4,7 +4,11 @@
 	<!-- Meta -->
 	<meta charset="UTF-8">
 	<!-- CSS Pages -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/leftNav.css" rel="stylesheet" media="only screen and (max-width:650px)">
+
+	<!-- JS Pages -->
+	<script type="text/javascript" src="js/main.js"></script>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
@@ -12,7 +16,7 @@
 	<!-- Page Title -->
 	<title>Chris Cochran</title>
 </head>
-<body>
+<body onload="setHeight();">
 	<div id="wrapper">
 		<div id="top">
 			<h1><a href="index.html">Chris Cochran</a></h1>
@@ -27,7 +31,7 @@
 			</div>
 		</div>
 		<div id="imgWrapper">
-			<img src="resources/photos/singer.jpg">
+			<img src="resources/photos/monkey.jpg" id="myImage">
 		</div>
 	</div>
 </body>
