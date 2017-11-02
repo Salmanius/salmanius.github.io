@@ -38,7 +38,7 @@ function setHeight(){
     //alert(height);
     document.getElementById("imgWrapper").style.height = (height*0.8)+"px";
     var width = document.getElementById('myImage').offsetWidth;
-    alert(width);
+    //alert(width);
     document.getElementById("top").style.width = width+"px";
 }
 
