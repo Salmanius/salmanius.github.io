@@ -1,20 +1,22 @@
 body {
     background-color: black;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    min-width: 454px;
 }
+
 #wrapper {
     float: left;
     overflow: hidden;
     width: 90%;
-   
+    display: block;
+    margin-left: 1em;
 }
 
-#top{
+#top {
     overflow: auto;
     width: 100%;
-    margin-left: 2em;
     overflow-x:hidden;
-    display: block;
+    margin-bottom: 1em;
 }
 
 #top h1 {
@@ -24,10 +26,9 @@ body {
     display: block;
     float: left;
     margin: 0;
+    padding-right: 0;
     min-width: 210px;
-    width: 30%;
     line-height: 1.7em;
-    padding-right: 1.7em;
 }
 
 #top a {
@@ -40,10 +41,12 @@ body {
 }
 
 #navbar {
-    width: 40%;
-    min-width: 470px;
-    display: block;
+    min-width: 426px;
+    display: none;
     float: right;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
 }
 
 #navbar ul {
@@ -73,18 +76,14 @@ body {
 }
 
 #imgWrapper {
-
+    display: block;
     float: left;
     height: 100%;
     width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
-img {
-   max-height: 100%;
-   width: auto;
-   margin: .5em 1em 1em 2em;
-   display: block;
-}
 
 button {
 	padding-top: 25px;

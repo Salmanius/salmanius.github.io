@@ -30,17 +30,30 @@ function fetchPhoto() {
     
 }
 
-
-function setHeight(){
+function imageAppear() {
+    var ratio = 1.5;
+    var heightPercent = 0.8;
     var height = window.innerHeight
             || document.documentElement.clientHeight
             || document.body.clientHeight;
-    //alert(height);
-    document.getElementById("imgWrapper").style.height = (height*0.8)+"px";
-    var width = document.getElementById('myImage').offsetWidth;
-    document.getElementById("top").style.width = width+"px";
+    var img = new Image();
+    img.id = "myImage";
+    img.src = "resources/photos/monkey.jpg"
+    img.onload=function(){
+        var nav = document.getElementById('navbar');
+        $(nav).fadeIn(1500);
+        $(img).fadeIn(1500);
+        width = document.getElementById('imgWrapper').offsetWidth;
+        document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
+    }
+    img.style.display = "none";
+    img.style.maxHeight = height*0.8+"px";
+    img.style.height = "100%";
+    img.style.width = "100%";
+    //$("imgWrapper").height(height*0.8);
+    //$("imgWrapper").css('height',(height*0.8));
+    document.getElementById('imgWrapper').appendChild(img);
 }
-
 
 //flickr.photos.getSizes
 

@@ -1,5 +1,9 @@
-#wrapper {
+body {
 	background-color: red;
+}
+
+top {
+	background-color: green;
 }
 
 #navbar {
@@ -21,4 +25,5 @@
     color: white;
     float: left;
     line-height: 3.7em;
+    background-color: blue;
 }
