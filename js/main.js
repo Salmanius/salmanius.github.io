@@ -38,11 +38,13 @@ function imageAppear() {
             || document.body.clientHeight;
     var img = new Image();
     img.id = "myImage";
-    img.src = "resources/photos/monkey.jpg"
+    img.src = "resources/photos/monkey_large.jpg"
     img.onload=function(){
         var nav = document.getElementById('navbar');
+        var text = document.getElementById("text");
         $(nav).fadeIn(1500);
         $(img).fadeIn(1500);
+        $(text).fadeIn(1500);
         width = document.getElementById('imgWrapper').offsetWidth;
         document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
     }
@@ -50,9 +52,12 @@ function imageAppear() {
     img.style.maxHeight = height*0.8+"px";
     img.style.height = "100%";
     img.style.width = "100%";
+    img.alt="Monkey eating a peanut";
+    img.title="Monkey";
     //$("imgWrapper").height(height*0.8);
     //$("imgWrapper").css('height',(height*0.8));
     document.getElementById('imgWrapper').appendChild(img);
+
 }
 
 //flickr.photos.getSizes
