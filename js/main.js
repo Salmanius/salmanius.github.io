@@ -52,7 +52,7 @@ function imageAppear() {
     img.style.maxHeight = height*0.8+"px";
     img.style.height = "100%";
     img.style.width = "100%";
-    img.alt="Monkey eating a peanut";
+    img.alt="Rhesus Macaques monkey eating a peanut";
     img.title="Monkey";
     //$("imgWrapper").height(height*0.8);
     //$("imgWrapper").css('height',(height*0.8));
