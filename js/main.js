@@ -30,36 +30,42 @@ function fetchPhoto() {
     
 }
 
-function imageAppear() {
+function imageAppear(filename,altText) {
     var ratio = 1.5;
-    var heightPercent = 0.8;
+    var heightPercent = 0.83;
     var height = window.innerHeight
             || document.documentElement.clientHeight
             || document.body.clientHeight;
     var img = new Image();
     img.id = "myImage";
-    img.src = "resources/photos/monkey_large.jpg"
+    img.src = "resources/photos/" + filename + "_large.jpg";
     img.onload=function(){
-        var nav = document.getElementById('navbar');
-        var text = document.getElementById("text");
-        $(nav).fadeIn(1500);
+        //setting up scaling
+        var wrapper = document.getElementById("wrapper");
+        $(wrapper).fadeIn(1500);
         $(img).fadeIn(1500);
-        $(text).fadeIn(1500);
         width = document.getElementById('imgWrapper').offsetWidth;
         document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
     }
     img.style.display = "none";
-    img.style.maxHeight = height*0.8+"px";
+    img.style.maxHeight = height*heightPercent+"px";
     img.style.height = "100%";
     img.style.width = "100%";
-    img.alt="Rhesus Macaques monkey eating a peanut";
-    img.title="Monkey";
-    //$("imgWrapper").height(height*0.8);
-    //$("imgWrapper").css('height',(height*0.8));
+    img.alt=altText;
+    img.style.cursor="pointer"; 
     document.getElementById('imgWrapper').appendChild(img);
-
 }
 
+function fullscreenImage(){
+    $('#myImage').click(function () {
+        var src = $(this).attr('src'); //get the source attribute of the clicked image
+        $('#fullscreen img').attr('src', src); //assign it to the tag for your fullscreen div
+        $('#fullscreen').fadeIn();
+    });
+    $('#fullscreen').click(function () {
+        $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
+    });
+}
 //flickr.photos.getSizes
 
 //https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=8e6439e9d46a9929d427b0483328be10&photo_id=37005632866&per_page=1&format=json&nojsoncallback=1

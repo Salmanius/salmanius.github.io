@@ -2,20 +2,22 @@ body {
     background-color: black;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     min-width: 454px;
+    width: auto;
 }
 
 #wrapper {
     overflow: hidden;
     width: 90%;
-    display: block;
-    margin-left: 1em;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #top {
     overflow: auto;
     width: 100%;
     overflow-x:hidden;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 #top h1 {
@@ -41,7 +43,7 @@ body {
 
 #navbar {
     min-width: 426px;
-    display: none;
+    display: block;
     float: right;
     overflow: auto;
     padding: 0;
@@ -85,7 +87,7 @@ body {
 }
 
 #text {
-    display: none;
+    display: block;
 }
 
 #text h2 {
@@ -93,6 +95,10 @@ body {
     padding-top: 10em;
     line-height: 1em;
     font-weight: 400;
+}
+
+#location {
+    line-height: .5em;
 }
 
 #text h3 {
@@ -106,6 +112,22 @@ body {
     line-height: 1.2em;
 }
 
+
+#fullscreen {
+    height: 100%;
+    display: none;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+
+#fullscreen img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
 
 button {
 	padding-top: 25px;
