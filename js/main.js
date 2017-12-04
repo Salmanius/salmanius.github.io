@@ -66,6 +66,17 @@ function fullscreenImage(){
         $(this).fadeOut(); //this will hide the fullscreen div if you click away from the image. 
     });
 }
+
+function photoTiles(){
+    var ratio = 1.5;
+    var heightPercent = 0.83;
+    var height = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight;
+    document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
+    var wrapper = document.getElementById("wrapper");
+    $(wrapper).fadeIn(1500);
+}
 //flickr.photos.getSizes
 
 //https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=8e6439e9d46a9929d427b0483328be10&photo_id=37005632866&per_page=1&format=json&nojsoncallback=1
