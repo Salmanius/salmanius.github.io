@@ -130,9 +130,22 @@ body {
     margin: 0 auto;
 }
 
-#tiles ul{
+#tiles img{
+    width: 33%;
+    max-width: 650px;
+}
+
+#tiles div{
+    display: inline;
     padding: 0;
-    list-style-type: none;
+}
+
+#tiles a:link{
+    color: black;
+}
+
+#tiles a:visited{
+    color: black;
 }
 
 button {
