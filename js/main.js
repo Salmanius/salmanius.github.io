@@ -27,7 +27,17 @@ function fetchPhoto() {
             document.getElementById("photo").src = url;
         });
     });
-    
+}
+
+function simpleAppear(){
+    var ratio = 1.5;
+    var heightPercent = 0.83;
+    var height = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight;
+    document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
+    var wrapper = document.getElementById("wrapper");
+    $(wrapper).fadeIn(1500);
 }
 
 function imageAppear(filename,altText) {
@@ -56,6 +66,32 @@ function imageAppear(filename,altText) {
     document.getElementById('imgWrapper').appendChild(img);
 }
 
+function imageAppearSquare(filename,altText) {
+    var ratio = 1.5;
+    var heightPercent = 0.83;
+    var height = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight;
+    var img = new Image();
+    img.id = "myImage";
+    img.src = "resources/photos/" + filename + ".jpg";
+    img.onload=function(){
+        //setting up scaling
+        var wrapper = document.getElementById("wrapper");
+        $(wrapper).fadeIn(1500);
+        $(img).fadeIn(1500);
+        width = document.getElementById('imgWrapper').offsetWidth;
+        document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
+    }
+    img.style.display = "none";
+    img.style.maxHeight = "100%";
+    img.style.height = "100%";
+    img.style.width = "100%";
+    img.alt=altText; 
+    document.getElementById('imgWrapper').appendChild(img);
+}
+
+
 function fullscreenImage(){
     $('#myImage').click(function () {
         var src = $(this).attr('src'); //get the source attribute of the clicked image
@@ -74,6 +110,20 @@ function photoTiles(){
             || document.documentElement.clientHeight
             || document.body.clientHeight;
     document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
+    var wrapper = document.getElementById("wrapper");
+    $(wrapper).fadeIn(1500);
+}
+
+function homepage(){
+    var ratio = 1.5;
+    var heightPercent = 0.83;
+    var vratio = 0.7; //0.5625
+    var height = window.innerHeight
+            || document.documentElement.clientHeight
+            || document.body.clientHeight;
+    document.getElementById('wrapper').style.maxWidth = height*heightPercent*ratio + "px";
+    document.getElementById('video').style.maxWidth = height*heightPercent*ratio + "px";
+    document.getElementById('video').style.height = height*vratio + "px";
     var wrapper = document.getElementById("wrapper");
     $(wrapper).fadeIn(1500);
 }

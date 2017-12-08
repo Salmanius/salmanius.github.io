@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- 
+Name: Chris Cochran
+Class: CSU CS372 FALL 2017
+Flickr API Key: 8e6439e9d46a9929d427b0483328be10
+Flickr API secret: e789212452c61207
+-->
+
+<html>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+<head>
+	<title>Chris Cochrany</title>
+</head>
+
+<body>
+	<h1 id="header">This page is currently under construction. </h1>
+	<ul>
+		<li><a href="photography.html">Photography</a></li>
+		<li><a href="monkey.html">Monkey</a></li>
+		<li><a href="sunsettree.html">Sunset Tree</a></li>
+		<li><a href="tajmahal.html">Taj Mahal</a></li>
+		<li><a href="eclipse.html">Solar Eclipse</a></li>
+		<li><a href="fence.html">Double Rainbow</a></li>
+		<li><a href="cheetah.html">Cheetah</a></li>
+	</ul>
+	<div class="center">
+		<h3>Clicking below buttons is not recommended if your name isnt Chris.</h3>
+		<button type="button" onclick="validatePage()">Validate JS</button>
+		<button type="button" class="middle" onclick="fetchPhoto()">Fetch a Photo!</button>
+	</div>
+	<div class="center">
+		<a class="middle">ID: </a> <a id="photoID" class="middle"></a>
+		<a class="middle">Photo URL: </a> <a id="photoURL" class="middle"></a>
+		<img id="photo" src="" alt="" title="">
+	</div>
+	<div id="video">
+		<iframe width="2000" height="2000" src="https://www.youtube.com/embed/dwPanUhVSaU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+	</div>
+	<table width="0">
+					<tr>
+						<td><a href="monkey.html">
+							  <img src="resources/photos/monkey_small.jpg" alt="A Rhesus Monkey" width="400">
+							</a>
+						</td>
+						<td><a href="tajmahal.html">
+							  <img src="resources/photos/tajmahal_small.jpg" alt="The Taj Mahal" width="400">
+							</a>
+						</td>
+						<td><a href="sunsettree.html">
+							  <img src="resources/photos/sunsettree_small.jpg" alt="Tree at Sunset" width="400">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td><a href="eclipse.html">
+							  <img src="resources/photos/eclipse_small.jpg" alt="Solar Eclipse" width="400">
+							</a>
+						</td>
+						<td><a href="fence.html">
+							  <img src="resources/photos/fence_small.jpg" alt="A Double Rainbow" width="400">
+							</a> 
+						</td>
+						<td><a href="cheetah.html">
+							  <img src="resources/photos/cheetah_small.jpg" alt=" A Young Cheetah" width="400">
+							</a>
+						</td>
+					</tr>
+					</table>
+	<p><a href="#top">Top</p>
+
+</body>
+</html>
